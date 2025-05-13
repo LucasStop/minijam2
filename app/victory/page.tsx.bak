@@ -139,14 +139,3 @@ function ParticleEffect() {
     </div>
   )
 }
-
-// Componente principal com Suspense
-export default function VictoryScreen() {
-  return (
-    <Suspense fallback={<div className="w-full h-screen flex items-center justify-center bg-gradient-to-b from-blue-700 to-purple-900">
-      <p className="text-2xl text-white">Carregando...</p>
-    </div>}>
-      <VictoryContent />
-    </Suspense>
-  )
-}
